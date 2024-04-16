@@ -1,0 +1,17 @@
+CREATE TABLE `campanas`.`tabla` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(45) NOT NULL,
+  `info` VARCHAR(45) NULL,
+  `fechacomienzo` DATE NULL,
+  `fechafinal` DATE NULL,
+  `tipocampana` VARCHAR(45) NULL,
+  `meta` VARCHAR(45) NULL,
+  `presupuesto` INT NULL,
+  `estado` VARCHAR(45) NULL,
+  `metrica` VARCHAR(45) NULL,
+  `equipo` VARCHAR(45) NOT NULL,
+  `extra` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+
+  INSERT INTO `campanas`.`tabla` (`nombre`, `info`, `fechacomienzo`, `fechafinal`, `tipocampana`, `meta`, `presupuesto`, `estado`, `metrica`, `equipo`, `extra`) VALUES ('publicidad', 'no hay', '2024/04/22', '2024/04/30', 'redes sociales', 'vender mas', '10000', 'planificada', 'roi: 10k', '1', 'no hay');
+
